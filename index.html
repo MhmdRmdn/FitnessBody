@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fitness Body</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      color: white;
+      background-color: black;
+    }
+
+    nav {
+      background-color: black;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      height: 120px;
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      z-index: 1;
+    }
+
+    .about-section {
+      position: relative;
+      height: 500px;
+      background-image: url("images/bgimage2.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .about-content {
+      position: relative;
+      text-align: center;
+      max-width: 600px;
+      z-index: 1;
+    }
+
+    .about-content h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .boxes-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 20px;
+      align-items: stretch;
+    }
+
+    .box {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      flex: 1;
+      margin: 0 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .box:hover {
+      background-color: #333;
+    }
+
+    .box a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .box img {
+      width: 300px;
+      height: 400px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .box p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="images/logo.jpeg" class="logo" alt="Logo">
+  </nav>
+
+  <section class="about-section">
+    <div class="about-overlay"></div>
+    <div class="about-content">
+      <h1>About Us</h1>
+      <p>
+        Welcome to <strong>House of Fitness Body</strong>, where we have been providing personalized training for over 15 years. 
+        We specialize in <strong>one-on-one personal training</strong> in a private gym setting to ensure your goals are met with 
+        complete focus and attention. 
+      </p>
+      <p>
+        <strong>Our qualifications:</strong>
+        <ul>
+          Elite Fitness Diploma | LAU-ACE
+          <br>Rehab Specialist
+          <br>Strength & Conditioning Expert
+          <br>Facility Management
+        </ul>
+      </p>
+    </div>
+  </section>
+
+  <div class="boxes-container">
+    <div class="box">
+      <a href="products.html">
+        <img src="images/whey.webp" alt="Products Icon">
+        <p>View Products</p>
+      </a>
+    </div>
+    <div class="box">
+      <a href="trainingProgram.html">
+        <img src="images/bgimage.png" alt="Programs Icon">
+        <p>Training Programs Packages</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

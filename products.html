@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page - Fitness Body</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      color: white;
+      background-color: black;
+    }
+
+    nav {
+      background-color: black;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      height: 120px;
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      z-index: 1;
+    }
+
+    .nav-links-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      z-index: 0;
+    }
+
+    .nav-group {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav-group a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-group a:hover {
+      color: #ccc;
+    }
+
+    .product-section {
+      position: relative;
+      padding: 50px;
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .product-content {
+      max-width: 400px;
+      margin: 20px;
+      background-color: #333;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1 1 calc(50% - 40px);
+    }
+
+    .product-content h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .product-content p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .product-images {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .product-images img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .product-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+
+    .product-description {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-links-container">
+      <div class="nav-group">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+    <a href="index.html">
+      <img src="images/logo.jpeg" class="logo" alt="Logo">
+    </a>
+  </nav>
+
+  <section class="product-section">
+    <div class="product-content">
+      <h1>Whey Protein - 1kg</h1>
+      <div class="product-images">
+        <img src="images/whey.webp" alt="Whey Protein">
+      </div>
+      <p class="product-price">$29.99</p>
+      <p class="product-description">
+        Packed with protein to support muscle growth and recovery, this high-quality whey protein is the perfect supplement for anyone looking to increase their protein intake.
+      </p>
+    </div>
+
+    <div class="product-content">
+      <h1>Whey Protein Gold</h1>
+      <div class="product-images">
+        <img src="images/whey2.webp" alt="Training Program" style="height: 230px;">
+      </div>
+      <p class="product-price">$49.99</p>
+      <p class="product-description">
+        Our 6-week personalized training program is designed to meet your fitness goals, whether it's weight loss, strength building, or overall fitness improvement.
+      </p>
+    </div>
+
+    <div class="product-content">
+      <h1>Optimum Nutrition Micronized Creatine</h1>
+      <div class="product-images">
+        <img src="images/creatine.webp" alt="Fitness Tracker">
+      </div>
+      <p class="product-price">$69.99</p>
+      <p class="product-description">
+        Muscle Size, Strength & Performance, Creatine monohydrate has been extensively studied and shown to help support muscle size, strength and recovery.
+      </p>
+    </div>
+
+    <div class="product-content">
+      <h1>Amino Energy Zero with electrolytes</h1>
+      <div class="product-images">
+        <img src="images/amino.webp" alt="Protein Bars">
+      </div>
+      <p class="product-price">$19.99</p>
+      <p class="product-description">
+        A pack of 10 delicious and nutritious protein bars to fuel your day. Perfect for a post-workout snack or an energy boost on the go.
+      </p>
+    </div>
+
+    <div class="product-content">
+        <h1>Optimum Nutrition Micronized Creatine</h1>
+        <div class="product-images">
+          <img src="images/creatine.webp" alt="Fitness Tracker">
+        </div>
+        <p class="product-price">$69.99</p>
+        <p class="product-description">
+          Muscle Size, Strength & Performance, Creatine monohydrate has been extensively studied and shown to help support muscle size, strength and recovery.
+        </p>
+    </div>
+  
+    <div class="product-content">
+        <h1>Amino Energy Zero with electrolytes</h1>
+        <div class="product-images">
+          <img src="images/amino.webp" alt="Protein Bars">
+        </div>
+        <p class="product-price">$19.99</p>
+        <p class="product-description">
+          A pack of 10 delicious and nutritious protein bars to fuel your day. Perfect for a post-workout snack or an energy boost on the go.
+        </p>
+    </div>
+  </section>
+</body>
+</html>

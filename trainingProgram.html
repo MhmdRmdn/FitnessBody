@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Training Programs - Fitness Body</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      color: white;
+      background-color: black;
+    }
+
+    nav {
+      background-color: black;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      height: 120px;
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      z-index: 1;
+    }
+
+    .nav-links-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      z-index: 0;
+    }
+
+    .nav-group {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav-group a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-group a:hover {
+      color: #ccc;
+    }
+
+    .product-section {
+        width: 100%;
+        min-height: 100vh;
+        padding: 50px 40px;
+        background-color: #222;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        align-items: center; /* Center vertically */
+    }
+
+
+    .product-content {
+      width: 300px;
+      min-height: 500px;
+      background-color: #333;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-content:hover{
+        height: 515px;
+    }
+
+    .product-content h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .product-images {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .product-images img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .product-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      font-size: 14px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-links-container">
+      <div class="nav-group">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+    <a href="index.html">
+      <img src="images/logo.jpeg" class="logo" alt="Logo">
+    </a>
+  </nav>
+
+  <section class="product-section">
+    <div class="product-content">
+      <h1>1 Month Program</h1>
+      <div class="product-images">
+        <img src="images/bgimage.png" alt="1 Month Program">
+      </div>
+      <p class="product-price">$199.00</p>
+      <p class="product-description">
+        4 sessions per week for 1 month. Great for short-term fitness goals and habit formation.
+      </p>
+    </div>
+
+    <div class="product-content">
+      <h1>3 Months Program</h1>
+      <div class="product-images">
+        <img src="images/bgimage1.png" alt="3 Month Program">
+      </div>
+      <p class="product-price">$499.00</p>
+      <p class="product-description">
+        4 sessions per week for 3 months. Perfect for noticeable improvements and long-term planning.
+      </p>
+    </div>
+
+    <div class="product-content">
+      <h1>6 Months Program</h1>
+      <div class="product-images">
+        <img src="images/bgimage2.png" alt="6 Month Program">
+      </div>
+      <p class="product-price">$899.00</p>
+      <p class="product-description">
+        5 intense sessions weekly for 6 months. For dedicated transformation and discipline building.
+      </p>
+    </div>
+  </section>
+</body>
+</html>
