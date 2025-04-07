@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness Body</title>
   <style>
     body {
@@ -76,7 +75,6 @@
       justify-content: space-between;
       margin: 30px 20px;
       align-items: stretch;
-      flex-wrap: wrap;
     }
 
     .box {
@@ -84,7 +82,7 @@
       color: white;
       text-align: center;
       padding: 15px;
-      flex: 1 1 calc(50% - 40px);
+      flex: 1;
       margin: 0 10px;
       border-radius: 10px;
       cursor: pointer;
@@ -92,7 +90,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-bottom: 20px;
     }
 
     .box:hover {
@@ -109,8 +106,8 @@
     }
 
     .box img {
-      width: 100%;
-      height: auto;
+      width: 300px;
+      height: 400px;
       object-fit: contain;
       border-radius: 10px;
     }
@@ -118,55 +115,6 @@
     .box p {
       margin-top: 10px;
       font-size: 16px;
-    }
-
-    /* Media Queries for smaller screens */
-    @media (max-width: 768px) {
-      .about-content h1 {
-        font-size: 32px;
-      }
-
-      .about-content p {
-        font-size: 16px;
-      }
-
-      .boxes-container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .box {
-        flex: 1 1 100%;
-        margin-bottom: 20px;
-      }
-
-      .box img {
-        width: 80%;
-        height: auto;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .about-content h1 {
-        font-size: 28px;
-      }
-
-      .about-content p {
-        font-size: 14px;
-      }
-
-      .logo {
-        height: 100px;
-        bottom: -50px;
-      }
-
-      .box {
-        padding: 10px;
-      }
-
-      .box a {
-        font-size: 16px;
-      }
     }
   </style>
 </head>
@@ -178,21 +126,23 @@
   <section class="about-section">
     <div class="about-overlay"></div>
     <div class="about-content">
-      <h1>About Us</h1>
-      <p>
-        Welcome to <strong>House of Fitness Body</strong>, where we have been providing personalized training for over 15 years. 
-        We specialize in <strong>one-on-one personal training</strong> in a private gym setting to ensure your goals are met with 
-        complete focus and attention. 
-      </p>
-      <p>
-        <strong>Our qualifications:</strong>
-        <ul>
-          Elite Fitness Diploma | LAU-ACE
-          <br>Rehab Specialist
-          <br>Strength & Conditioning Expert
-          <br>Facility Management
-        </ul>
-      </p>
+        <h1>About Us</h1>
+        <p>
+          Welcome to <strong>House of Fitness Body</strong>, where we have been providing personalized training for over 15 years. 
+          We specialize in <strong>one-on-one personal training</strong> in a private gym setting to ensure your goals are met with 
+          complete focus and attention. 
+        </p>
+        <div style="margin-top: 20px;">
+          <strong>Our qualifications:</strong>
+          <p>
+            Elite Fitness Diploma | LAU-ACE<br>
+            Rehab Specialist<br>
+            Strength & Conditioning Expert<br>
+            Facility Management
+          </p>
+        </div>
+      </div>
+      
     </div>
   </section>
 
