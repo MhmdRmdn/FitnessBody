@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Training Programs - Fitness Body</title>
   <style>
     * {
@@ -62,17 +63,16 @@
     }
 
     .product-section {
-        width: 100%;
-        min-height: 100vh;
-        padding: 50px 40px;
-        background-color: #222;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-        align-items: center; /* Center vertically */
+      width: 100%;
+      min-height: 100vh;
+      padding: 50px 40px;
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: center; /* Center vertically */
     }
-
 
     .product-content {
       width: 300px;
@@ -85,8 +85,8 @@
       justify-content: space-between;
     }
 
-    .product-content:hover{
-        height: 515px;
+    .product-content:hover {
+      height: 515px;
     }
 
     .product-content h1 {
@@ -118,6 +118,40 @@
     .product-description {
       font-size: 14px;
       color: #ccc;
+    }
+
+    /* Mobile responsive adjustments */
+    @media (max-width: 768px) {
+      .nav-group {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .product-section {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+
+      .product-content {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .product-content h1 {
+        font-size: 18px;
+      }
+
+      .product-price {
+        font-size: 16px;
+      }
+
+      .product-description {
+        font-size: 12px;
+      }
+
+      .logo {
+        height: 100px;
+      }
     }
   </style>
 </head>
